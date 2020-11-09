@@ -12,6 +12,8 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
 
 @SuppressWarnings("serial")
 public class Interfaz_grafica extends JFrame {
@@ -63,7 +65,9 @@ public class Interfaz_grafica extends JFrame {
 		lblNumero_3.setBounds(74, 135, 69, 14);
 		contentPane.add(lblNumero_3);
 		
-		JButton btnSuma = new JButton("Sumar");
+		JButton btnSuma = new JButton("  ");
+		btnSuma.setHorizontalAlignment(SwingConstants.LEFT);
+		btnSuma.setIcon(new ImageIcon("C:\\Users\\HP\\Downloads\\boton-de-simbolo-mas.png"));
 		
 	
 		//Evento para Suma		
@@ -84,7 +88,7 @@ public class Interfaz_grafica extends JFrame {
 		});
 		
 		
-		btnSuma.setBounds(10, 208, 89, 23);
+		btnSuma.setBounds(27, 208, 59, 23);
 		contentPane.add(btnSuma);
 		
 		JButton btnResta = new JButton("Restar");
